@@ -6,7 +6,7 @@ import java.util.HashMap;
 /**
  * Bundles the properties of the different untis together.
  */
-class UnitProperties
+public class UnitProperties
 {
     /**
      * Initializes the properties with the given values, except for the armor values

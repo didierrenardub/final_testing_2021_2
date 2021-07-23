@@ -63,7 +63,7 @@ public class Unit
     {
         if (other != null && this.properties() != null && other.properties() != null)
         {
-            return Math.max(1, this.properties().attack() - other.properties().armor(this.properties().type()) + this.bonusDamage.get(other.properties().type(), 0));
+            return Math.max(1, this.properties().attack() - other.properties().armor(this.properties().type()) + this.bonusDamage.getOrDefault(other.properties().type(), 0));
         }
 
         return 1;
